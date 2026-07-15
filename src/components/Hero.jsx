@@ -32,7 +32,6 @@ const Hero = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        markers: true,
         trigger: ".hero-section",
         top: "top top",
         end: "+=200%",
