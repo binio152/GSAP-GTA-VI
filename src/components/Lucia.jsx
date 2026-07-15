@@ -29,7 +29,7 @@ const Lucia = () => {
         duration: 1,
         ease: "power1.inOut",
       },
-      "<",
+      "<+0.2s",
     );
   });
 

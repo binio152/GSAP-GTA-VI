@@ -195,7 +195,7 @@ main {
     @apply relative flex justify-center items-center pb-80 shadow-2xl;
 
     .animated-gradient-bg {
-      @apply absolute w-full md:h-[220vh] h-[120vh] left-0 -top-1/2 xl:-bottom-1/2 md:-bottom-5/6;
+      @apply absolute w-full md:h-[160vh] h-[120vh] left-0 -top-1/6 xl:-bottom-1/2 md:-bottom-5/6;
     }
 
     .post-card-wrapper {
