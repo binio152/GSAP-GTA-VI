@@ -8,7 +8,7 @@ const Outro = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".final-message",
-        start: "top 30%",
+        start: "top 40%",
         end: "top 10%",
         scrub: true,
       },
@@ -19,8 +19,8 @@ const Outro = () => {
   });
 
   return (
-    <section className="final-message">
-      <div className="h-full col-center gap-10">
+    <section className="final-message ">
+      <div className="h-dvh col-center gap-10 ">
         <img src="/images/logo.webp" alt="logo" className="md:w-72 w-52" />
 
         <div>

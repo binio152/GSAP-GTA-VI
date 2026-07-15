@@ -1,37 +1,24 @@
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 
 const SecondVideo = () => {
-  const videoRef = useRef(null);
+  const videoRef = useRef();
 
   useGSAP(() => {
-    gsap.set(".second-vd-wrapper", { marginTop: "-90vh", opacity: 0 });
+    gsap.set(".lucia", { marginTop: "-60vh", opacity: 0 });
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".second-vd-wrapper",
+        trigger: ".lucia",
         start: "top top",
-        end: "+=200% bottom",
+        end: "bottom top",
         scrub: 2,
         pin: true,
       },
     });
 
-    tl.to(".second-vd-wrapper", {
-      delay: 0.5,
-      opacity: 0,
-      ease: "power1.inOut",
-    });
-    tl.to(
-      ".second-vd-wrapper",
-      {
-        opacity: 1,
-        duration: 2,
-        ease: "power1.inOut",
-      },
-      "<",
-    );
+    tl.to(".lucia", { opacity: 1, duration: 1, ease: "power1.inOut" });
 
     videoRef.current.onloadedmetadata = () => {
       tl.to(
@@ -44,12 +31,10 @@ const SecondVideo = () => {
         "<",
       );
     };
-
-    tl.to(".lucia", { opacity: 1, duration: 1, ease: "power1.inOut" });
-  }, []);
+  });
 
   return (
-    <section className="second-vd-wrapper">
+    <section className="lucia">
       <div className="h-dvh">
         <video
           ref={videoRef}
@@ -57,8 +42,10 @@ const SecondVideo = () => {
           playsInline
           preload="auto"
           src="/videos/output2.mp4"
-          className="size-full object-cover second-video"
-          style={{ objectPosition: "30% 0%" }}
+          className="size-full object-cover second-vd"
+          style={{
+            objectPosition: "15% 0%",
+          }}
         />
       </div>
     </section>
