@@ -2,10 +2,9 @@ import { useGSAP } from "@gsap/react";
 import ComingSoon from "./ComingSoon";
 import { useMaskSettings } from "../constants";
 import gsap from "gsap";
-import { GSDevTools, ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(GSDevTools);
 
 const Hero = () => {
   const {
@@ -42,7 +41,6 @@ const Hero = () => {
       },
     });
 
-    GSDevTools.create({ animation: tl });
     tl.to(".fade-out", { opacity: 0, ease: "power1.inOut" });
     tl.to(".scale-out", { scale: 1, ease: "power1.inOut" });
     tl.to(
