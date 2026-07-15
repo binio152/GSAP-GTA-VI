@@ -15,17 +15,20 @@ export const useMaskSettings = () => {
 
   if (isTablet) {
     return {
-      initialMaskPos: "50% -1700vh",
+      initialMaskPos: "50% 50%",
       initialMaskSize: "3500% 3500%",
-      maskPos: "50% 17vh",
-      maskSize: "30% 30%",
+      maskPos: "50% 35%",
+      maskSize: "35% 35%",
+      maskMarginTop: "-10vh",
+      overLayMarginTop: "vh",
+      scale: 0.8,
     };
   }
 
   return {
-    initialMaskPos: "50% 22%",
-    initialMaskSize: "3500% 3500%",
-    maskPos: "50% 22%",
-    maskSize: "20% 20%",
+    initialMaskPos: "50% 50%",
+    initialMaskSize: "4200% 3500%",
+    maskPos: "50% 38%",
+    maskSize: "30% 30%",
   };
 };
