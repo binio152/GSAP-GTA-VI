@@ -10,7 +10,6 @@ const SecondVideo = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        markers: true,
         trigger: ".second-vd-wrapper",
         start: "top top",
         end: "+=200% bottom",
