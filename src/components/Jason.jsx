@@ -11,7 +11,6 @@ const Jason = () => {
         start: "top 90%",
         end: "20% center",
         scrub: 2,
-        markers: true,
       },
     });
 
@@ -23,7 +22,6 @@ const Jason = () => {
           trigger: ".jason",
           start: "top center",
           end: "80% center",
-          markers: true,
           scrub: 2,
         },
         y: -300,
