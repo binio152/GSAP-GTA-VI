@@ -24,6 +24,7 @@ const Lucia = () => {
           start: "top center",
           end: "80% center",
           scrub: 2,
+          pin: true
         },
         y: -200,
         duration: 1,
