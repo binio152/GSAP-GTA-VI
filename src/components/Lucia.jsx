@@ -9,7 +9,7 @@ const Lucia = () => {
       .timeline({
         scrollTrigger: {
           trigger: ".lucia-life",
-          start: "top 80%",
+          start: "top center",
           end: "10% center",
           scrub: 2,
         },
