@@ -8,28 +8,19 @@ const FinalVideo = () => {
   useGSAP(() => {
     gsap.set(".final-content", { opacity: 0 });
 
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".final",
-        start: "top top",
-        end: "90% top",
-        scrub: true,
-        pin: true,
-      },
-    });
-
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".final",
-        start: "top 80%",
+        start: "top center",
         end: "90% top",
         scrub: true,
+        pin: true
       },
     });
 
     tl.to(".final-content", {
       opacity: 1,
-      duration: 1,
+      duration: 1.5,
       scale: 1,
       ease: "power1.inOut",
     });
