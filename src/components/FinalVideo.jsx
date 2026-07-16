@@ -11,7 +11,7 @@ const FinalVideo = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".final",
-        start: "top center",
+        start: "top top",
         end: "90% top",
         scrub: true,
         pin: true
@@ -20,7 +20,7 @@ const FinalVideo = () => {
 
     tl.to(".final-content", {
       opacity: 1,
-      duration: 1.5,
+      duration: 2,
       scale: 1,
       ease: "power1.inOut",
     });
